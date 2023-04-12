@@ -21,7 +21,7 @@ variable "aws_allow_cidr_range" {
 
 variable "aws_instance_type" {
   description = "Type of EC2 instance to provision"
-  default     = "c5.4xlarge"
+  default     = "t2.micro"
 }
 
 variable "amifilter_osname" {
