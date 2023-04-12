@@ -1,7 +1,7 @@
 
 
 resource "aws_security_group" "tfesen" {
-  name = "tfesen"
+  name = "demo-terraform-sentinel-sg"
   vpc_id = data.aws_vpc.primary-vpc.id
   egress = [
     {
@@ -34,7 +34,7 @@ resource "aws_security_group" "tfesen" {
 
 resource "aws_instance" "tfesen" {
   count = var.resource_count
-  ami = data.aws_ami.ami_os_filter.id
+  ami = "ami-00f8e2c955f7ffa9b"
   instance_type = var.aws_instance_type
   #key_name = var.aws_keyname
 

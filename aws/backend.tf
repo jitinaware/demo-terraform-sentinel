@@ -3,7 +3,7 @@ terraform {
     organization = "jaware-hc-demos"
 
     workspaces {
-      name = "demo-tfe-sentinel-aws"
+      name = "demo-terraform-sentinel"
     }
   }
 }
